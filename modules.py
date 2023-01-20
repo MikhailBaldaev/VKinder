@@ -36,7 +36,6 @@ class Photos(Base):
 
     id = sq.Column(sq.Integer, primary_key=True)
     link = sq.Column(sq.String(length=60), nullable=False)
-    likes = sq.Column(sq.Integer)
     candidate_id = sq.Column(sq.Integer, sq.ForeignKey("candidates.id"), nullable=False)
 
 
